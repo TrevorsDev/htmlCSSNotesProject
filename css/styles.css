@@ -1,18 +1,12 @@
-* {
+html {
+  box-sizing: border-box;
+  background-color: rgb(161, 144, 144);
+}
+
+table {
   color: pink;
 }
 
- table {
-  border: solid 2px #999;
-  border-radius: 10px;
-} 
-
- tr th{
-  border: #999 solid 1px;
-  border-radius: 10px;
-}
-
-tr td{
-  border: #999 solid 1px;
-  border-radius: 10px;
+tr td {
+  border-left: grey solid 1px;
 }
