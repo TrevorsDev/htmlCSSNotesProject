@@ -1,12 +1,32 @@
 html {
   box-sizing: border-box;
-  background-color: rgb(161, 144, 144);
+  background-color: #233142;
 }
 
-table {
-  color: pink;
+thead {
+  background: #455d7a;
+  font-size: 20px;
+  font-family: ;
+}
+
+tbody {
+  font-family: sans-serif;
 }
 
 tr td {
   border-left: grey solid 1px;
+}
+
+h1, h2, p, th { 
+  color: #e3e3e3;
+}
+
+#tr2 {
+  background: #e3e3e3;
+  color: #233142;
+}
+
+#tr1, #tr3 {
+  background: #f95959;
+  color: 
 }
