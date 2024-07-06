@@ -7,6 +7,11 @@ table {
   color: pink;
 }
 
+thead, th {
+  background-color: rgba(27, 27, 98, 0.289);
+  border: solid 1px rgb(53, 75, 135);
+}
+
 tr td {
-  border-left: grey solid 1px;
+  
 }
