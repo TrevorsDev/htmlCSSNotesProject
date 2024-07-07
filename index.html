@@ -5,11 +5,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
   <title>HTML & CSS Notes</title>
 </head>
 
 <body>
 
+  <nav>
+    <ul id="navigation">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Blog</a></li>
+    </ul>
+  </nav>
   <h1>HTML Notes</h1>
   <h2>HTML Tables</h2>
   <p class="discription">HTML tables allow web developers to arrange data into rows and columns.</p>
@@ -42,35 +59,37 @@
 
       <tbody>
         <tr id="tr1">
-          <td>The &lt;table&gt; tag is used to create a table in HTML, which is a block element that represents tabular
+          <td>The <code>&lt;table&gt;</code> tag is used to create a table in HTML, which is a block element that represents tabular
             data.
           </td>
-          <td>The &lt;thead&gt; tag in HTML is used to encapsulate a set of table rows (&lt;tr&gt; elements) that
-            comprise the head of a table, typically containing column headers (&lt;th&gt; elements).
+          <td>The <code>&lt;thead&gt;</code> tag in HTML is used to encapsulate a set of table rows (<code>&lt;tr&gt;</code> elements) that
+            comprise the head of a table, typically containing column headers (<code>&lt;th&gt;</code> elements).
           </td>
-          <td>The &lt;tr&gt; tag is used to define a row in an HTML table.</td>
-          <td>The &lt;th&gt; tag is used to designate a cell as a column header in a table.</td>
-          <td>The &lt;tbody&gt; tag in HTML is used to define a set of rows that make up the body of an HTML table.</td>
-          <td>The &lt;td&gt; tag is used to define a data cell in an HTML table, and it is used as a child element of the &lt;tr&gt; element, which defines a table row.</td>
+          <td>The <code>&lt;tr&gt;</code> tag is used to define a row in an HTML table.</td>
+          <td>The <code>&lt;th&gt;</code> tag is used to designate a cell as a column header in a table.</td>
+          <td>The <code>&lt;tbody&gt;</code> tag in HTML is used to define a set of rows that make up the body of an HTML table.</td>
+          <td>The <code>&lt;td&gt;</code> tag is used to define a data cell in an HTML table, and it is used as a child element of
+            the <code>&lt;tr&gt;</code> element, which defines a table row.</td>
         </tr>
 
         <tr id="tr2">
           <td>The table is made up of rows and columns of cells containing data.</td>
           <td>This element provides semantic information about the table's structure and can be used for rendering on
             screens</td>
-          <td>It is an essential element in creating tables and is used in combination with the &lt;th&gt; and
-            &lt;td&gt; tags to define table headers and data cells.</td>
-            <td>It is a part of the HTML and is used to define a header cell that can appear in the first row of an HTML table.</td>
-            <td>This tag is used inside the &lt;table&gt; tag and is a child of the &lt;table&gt; tag.</td>
-            <td>The &lt;td&gt; tag can contain text, a form, an image, a table, etc.</td>
+          <td>It is an essential element in creating tables and is used in combination with the <code>&lt;th&gt;</code> and
+            <code>&lt;td&gt;</code> tags to define table headers and data cells.</td>
+          <td>It is a part of the HTML and is used to define a header cell that can appear in the first row of an HTML
+            table.</td>
+          <td>This tag is used inside the <code>&lt;table&gt;</code> tag and is a child of the <code>&lt;table&gt;</code> tag.</td>
+          <td>The <code>&lt;td&gt;</code> tag can contain text, a form, an image, a table, etc.</td>
         </tr>
 
         <tr id="tr3">
           <td></td>
           <td></td>
           <td></td>
-          <td>The text in &lt;th&gt; elements are bold and centered by default.</td>
-          <td>The &lt;tbody&gt; tag is used to group the rows of a table together</td>
+          <td>The text in <code>&lt;th&gt;</code> elements are bold and centered by default.</td>
+          <td>The <code>&lt;tbody&gt;</code> tag is used to group the rows of a table together</td>
           <td>By default, the content inside it is positioned to the left.</td>
         </tr>
     </table>
@@ -78,12 +97,12 @@
 
     <section id="tableDescription">
       <p>A table in HTML consists of table cells inside rows and columns.</p>
-      <p>The table element &lt;table&gt; is used to create a table. The thead, tbody, and tfoot elements are used to
+      <p>The table element <code>&lt;table&gt;</code> is used to create a table. The thead, tbody, and tfoot elements are used to
         define
-        the head, body, and footer sections of a table, respectively. <br>Within &lt;head&gt;, we nest &lt;tr&gt; and
+        the head, body, and footer sections of a table, respectively. <br>Within <code>&lt;head&gt;</code>, we nest <code>&lt;tr&gt;</code> and
         then
-        &lt;th&gt; which apply an new row to each heading that we apply inbetween the &lt;th&gt; and &lt;/th&gt;
-        tags.<br>Within &lt;body&gt;, we nest &lt;tr&gt; followed and then as many &lt;td&gt;s that we need within that
+        <code>&lt;th&gt;</code> which apply an new row to each heading that we apply inbetween the <code>&lt;th&gt;</code> and <code>&lt;/th&gt;</code>
+        tags.<br>Within <code>&lt;body&gt;</code>, we nest <code>&lt;tr&gt;</code> followed and then as many <code>&lt;td&gt;</code>s that we need within that
         column.</p>
     </section>
 </body>
