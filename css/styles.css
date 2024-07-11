@@ -13,10 +13,35 @@ header {
   display: flex;
 }
 
+/* Navbar container */
 nav {
-  display: inline-flex;
+  overflow: hidden;
+  background-color: #e3e3e3;
+  font-family: Merriweather;
+  width: 100%;
 }
 
+/* Links inside navbar */
+nav a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
 
 thead {
   background: #455d7a;
