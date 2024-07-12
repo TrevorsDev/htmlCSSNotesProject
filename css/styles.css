@@ -9,14 +9,20 @@ html body {
   height: 100%;
 }
 
-header {
+/* Applying flexbox to the entire page for positioning */
+/* body {
   display: flex;
-}
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  flex-direction: column;
+} */
 
 /* Navbar container */
 nav {
   overflow: hidden;
-  background-color: #e3e3e3;
+  background-color:#253344;
   font-family: Merriweather;
   width: 100%;
 }
@@ -25,7 +31,7 @@ nav {
 nav a {
   float: left;
   font-size: 16px;
-  color: white;
+  color:#e3e3e3;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -39,14 +45,56 @@ nav a {
 
 .dropdown .dropbtn {
   font-size: 16px;
+  font-family: inherit; /*Important for virticle alignment on mobile phones*/
+  background-color: #f95959;
+  border-radius: 100px;
+  padding:10px;
+  margin: 15px; /*Important for virticle alignment on mobile phones*/
   border: none;
   outline: none;
+  
+}
+
+ .dropbtn:hover {
+  background-color:#455d7a
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  max-width: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 thead {
   background: #455d7a;
   font-size: 20px;
 
+}
+
+#table {
+  text-align: center;
+}
+
+table {
+  margin: auto;
+  width: 80%;
 }
 
 tbody {
@@ -63,13 +111,11 @@ h1 {
   text-align: center;
 }
 
-h1,
-h2,
-p,
-th {
+h1, h2, p, th {
   color: #e3e3e3;
   font-family: Merriweather;
   line-height: 1.5
+  
 }
 
 p {
@@ -88,9 +134,7 @@ p {
 
 a {
   text-decoration: none;
-  
   border-radius: 3px;
-
 }
 
 a:hover {
