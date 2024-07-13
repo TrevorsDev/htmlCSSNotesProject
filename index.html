@@ -153,6 +153,7 @@
           <td></td>
           <td></td>
           <td></td>
+          <td></td>
         </tr>
       </tbody>
     </table>
@@ -175,7 +176,8 @@
     </section>
 
     <!-- Flexbox notes -->
-    <section>
+    <section id="css">
+      <h1>CSS Notes</h1>
       <table>
         <thead>
           <th>
@@ -185,18 +187,21 @@
           </td>
           </th>
         </thead>
-        <tr>
-          <td>
-            <code>flex-start:</code> Items align to the left side of the container.the property aligns items
-            horizontally and accepts the following values:
-          </td>
-          <td>
-            <code>flex-end</code>: Items align to the right side of the container.
-          </td>
-          <td><code>center</code>: Items align at the center of the container.</td>
-          <td><code>space-between</code>: Items display with equal spacing between them.</td>
-          <td><code>space-around</code>: Items display with equal spacing around them.</td>
-        </tr>
+
+        <tbody>
+          <tr>
+            <td>
+              <code>flex-start:</code> Items align to the left side of the container.the property aligns items
+              horizontally and accepts the following values:
+            </td>
+            <td>
+              <code>flex-end</code>: Items align to the right side of the container.
+            </td>
+            <td><code>center</code>: Items align at the center of the container.</td>
+            <td><code>space-between</code>: Items display with equal spacing between them.</td>
+            <td><code>space-around</code>: Items display with equal spacing around them.</td>
+          </tr>
+        </tbody>
 
         <thead>
           <th>
@@ -206,15 +211,19 @@
           </td>
           </th>
         </thead>
-        <tr>
-          <td>
-            <code>flex-start</code>: Items align to the top of the container.
-          </td>
-          <td><code>flex-end</code>: Items align to the bottom of the container.</td>
-          <td><code>center:</code>Items align at the vertical center of the container.</td>
-          <td><code>baseline</code>: Items display at the baseline of the container.</td>
-          <td><code>stretch</code>: Items are stretched to fit the container.</td>
-        </tr>
+
+        <tbody>
+          <tr>
+            <td>
+              <code>flex-start</code>: Items align to the top of the container.
+            </td>
+            <td><code>flex-end</code>: Items align to the bottom of the container.</td>
+            <td><code>center:</code>Items align at the vertical center of the container.</td>
+            <td><code>baseline</code>: Items display at the baseline of the container.</td>
+            <td><code>stretch</code>: Items are stretched to fit the container.</td>
+          </tr>
+        </tbody>
+
         <thead>
           <th>
           <td colspan="6">
@@ -223,16 +232,164 @@
           </td>
           </th>
         </thead>
-        <tr>
-          <td>
-            <code>row</code>: Items are placed the same as the text direction.
-          </td>
-          <td><code>row-reverse</code>: Items are placed opposite to the text direction.</td>
-          <td><code>column</code>: Items are placed top to bottom.</td>
-          <td><code>column-reverse</code>: Items are placed bottom to top.</td>
-        </tr>
+
+        <tbody>
+          <tr>
+            <td>
+              <code>row</code>: Items are placed the same as the text direction.
+            </td>
+            <td><code>row-reverse</code>: Items are placed opposite to the text direction.</td>
+            <td><code>column</code>: Items are placed top to bottom.</td>
+            <td><code>column-reverse</code>: Items are placed bottom to top.</td>
+          </tr>
         </tbody>
-      </table>
+
+        <table>
+          <thead>
+            <th>
+            <td colspan="6">
+              <span class="rowHeader"><code>flex-direction</code></span> <br>This CSS property defines the direction
+              items are placed in the container, and accepts the following values:
+            </td>
+            </th>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td><code>row</code>: Items are placed the same as the text direction.
+              </td>
+              <td><code>row-reverse</code>: Items are placed opposite to the text direction.
+              </td>
+              <td><code>column</code>: Items are placed top to bottom.
+              </td>
+              <td><code>column-reverse</code>: Items are placed bottom to top.
+              </td>
+            </tr>
+          </tbody>
+
+          <thead>
+            <th>
+            <td colspan="6">
+              <span class="rowHeader"><code>order</code></span> <br>The order property will reorder the elements
+              according to the values given to the element and its <code>order</code> property.
+            </td>
+            </th>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>
+                By default, items have a value of 0, but we can use this property to also set it to a positive or
+                negative integer value (-2, -1, 0, 1, 2).
+              </td>
+              <td>When you assign an order value to a specific item, it will be positioned according to that value
+                relative to the default 0 values of other items.</td>
+              <td>Positive Order Values: Items with higher order values will be placed further to the right (or bottom
+                in a column layout).</td>
+              <td>Negative Order Values: Items with lower (negative) order values will be placed further to the left (or
+                top in a column layout).</td>
+            </tr>
+          </tbody>
+
+          <thead>
+            <th>
+            <td colspan="6">
+              <span class="rowHeader"><code>align-self</code></span> <br>This is another property used tp target
+              individual item/s. It accepts the same values, and acts as <code>align-items</code>
+            </td>
+            </th>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>placeholder<br>placeholder2</td>
+            </tr>
+          </tbody>
+
+          <thead>
+            <th>
+            <td colspan="6">
+              <span class="rowHeader"><code>flex-wrap</code></span> <br>determines whether flex items are forced onto
+              one line or can wrap onto multiple lines. It’s a useful property for designing responsive and flexible
+              layouts.
+            </td>
+            </th>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>
+                <code>nowrap</code>: Every item is fit to a single line.
+              </td>
+              <td>
+                <code>wrap</code>: Items will wrap onto new lines if necessary.
+              </td>
+              <td>
+                <code>wrap-reverse</code>: Items will wrap onto new lines in reverse order if necessary.
+              </td>
+              <td>
+                Trust me, its easier than it sounds...
+              </td>
+            </tr>
+          </tbody>
+
+          <thead>
+            <th>
+            <td colspan="6">
+              <span class="rowHeader"><code>flex-flow</code></span> <br>The two properties flex-direction and flex-wrap
+              are used so often together that the shorthand property flex-flow was created to combine them.
+            </td>
+            </th>
+          </thead>
+
+          <tbody>
+            <td>
+              This shorthand property accepts the value of the two properties separated by a space. Ex:
+              <code>flex-flow: row wrap</code>
+            </td>
+          </tbody>
+
+          <thead>
+            <th>
+            <td colspan="6">
+              <span class="rowHeader"><code>align-content</code></span> <br>use <code>align-content</code> to set how
+              multiple lines are spaced apart from each other. This property takes the following values:
+            </td>
+            </th>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>
+                <code>flex-start</code>: Lines are packed at the top of the container.
+              </td>
+              <td>
+                <code>flex-end</code>: Lines are packed at the bottom of the container.
+              </td>
+              <td>
+                <code>center</code>: Lines are packed at the vertical center of the container.
+              </td>
+              <td>
+                <code>space-between</code>: Lines display with equal spacing between them.
+              </td>
+              <td>
+                <code>space-around</code>: Lines are evenly distributed in the flex container's main axis, with equal
+                space around each line.
+              </td>
+              <td>
+                <code>space-evenly</code>: Lines are stretched to fit the container.
+          </tbody>
+        </table>
+    </section>
+
+    <section class="descritions">
+      <h2>Flex-direction Discrepancies </h2>
+      <p>When you set the direction to <code>row-reverse</code> or <code>column-reverse</code>, <code>flex-start</code>
+        and <code>flex-end</code> are also reversed.</p>
+      <p>
+        when the <code>flex-direction</code> is a column, <code>justify-content</code> changes to the vertical and
+        <code>align-items</code> to the horizontal.
+      </p>
     </section>
 
 
