@@ -19,6 +19,8 @@ html body {
   flex-direction: column;
 } */
 
+
+
 /* Navbar container */
 nav {
   overflow: hidden;
@@ -51,8 +53,7 @@ nav a {
   padding:10px;
   margin: 15px; /*Important for virticle alignment on mobile phones*/
   border: none;
-  outline: none;
-  
+  outline: none; 
 }
 
  .dropbtn:hover {
@@ -139,4 +140,13 @@ a {
 
 a:hover {
   background-color: #e3e3e364;
+}
+
+/* second table styling */
+.rowHeader {
+  background: #455d7a;
+  color: #e3e3e3;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
 }
