@@ -178,6 +178,7 @@
     <!-- Flexbox notes -->
     <section id="css">
       <h1>CSS Notes</h1>
+      <h2>Flex-box</h2>
       <table>
         <thead>
           <th>
@@ -390,6 +391,95 @@
         when the <code>flex-direction</code> is a column, <code>justify-content</code> changes to the vertical and
         <code>align-items</code> to the horizontal.
       </p>
+    </section>
+
+    <section class="position">
+      <div id="flex-box">
+        <p>Certainly! The transform: translate(-50%, -50%); property, used in conjunction with top and left, is a
+          powerful
+          way to center an element both horizontally and vertically within its containing block. Here’s how it works:
+
+          Breakdown of transform: translate(-50%, -50%);
+          translate(-50%, -50%): This part of the transform property moves the element by a percentage of its own
+          dimensions:
+
+          -50% on the x-axis moves the element left by 50% of its own width.
+          -50% on the y-axis moves the element up by 50% of its own height.
+          Relative to Element's Size: The translate function moves the element relative to its own size. So -50%
+          translates to 50% of the element’s width (for the x-axis) or height (for the y-axis).
+
+          How It Works with top and left
+          When you use top: 50%; left: 50%; in combination with transform: translate(-50%, -50%);, here’s what happens:
+
+          Positioning with top and left:
+
+          top: 50%; left: 50%; positions the element’s top-left corner at the midpoint of its containing block (which is
+          the parent element).
+          Translation:
+
+          After positioning the element’s top-left corner at 50% of the container’s width and height, transform:
+          translate(-50%, -50%); moves the element back by 50% of its own width and height.
+          This effectively centers the element's center point at the midpoint of its containing block.
+          Example
+          Assume you have a parent container of width 500px and height 300px, and you want to center a child element of
+          width 200px and height 100px.
+
+          Positioning:
+
+          top: 50%; left: 50%; will place the top-left corner of the child 250px from the left and 150px from the top of
+          the parent container (which is halfway through the parent container).
+          Centering:
+
+          transform: translate(-50%, -50%); will then move the child element up by 50px (half of 100px) and left by
+          100px
+          (half of 200px), so the child’s center aligns with the center of the parent container.</p>
+        <p>top: 50%; left: 50%; positions the top-left corner of the element at the center of its parent container.
+          transform: translate(-50%, -50%); shifts the element back by half of its own width and height, centering it
+          horizontally and vertically.
+          This combination is a common technique for perfectly centering elements in both dimensions within their
+          containing block.</p>
+      </div>
+
+      <div id="grid">
+        <p>grid-template-rows defines the number and sizes of the rows of the grid
+          grid-template is a shorthand for defining both grid-template-columns and grid-template-rows in one line
+          row-gap puts blank space between the rows of the grid
+          column-gap puts blank space between the columns of the grid
+          gap is a shorthand for defining both row-gap and column-gap in one line
+          grid-row-start and grid-row-end makes elements span certain rows of the grid
+          grid-column-start and grid-column-end makes elements span certain columns of the grid
+          grid-area is a shorthand for grid-row-start, grid-column-start, grid-row-end, and grid-column-end, all in one
+          line</p>
+      </div>
+
+      <div id="scalling">
+        <h2>Popular Responsive Scalling</h2>
+        <pre>
+          .container {
+            width: 50%;
+            height: 200px;
+            overflow: hidden;
+          }
+          
+          .container img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+          }
+        </pre>
+        <p>In the example above, .container represents a container div. It is set to a width of 50% (half of the
+          browser’s width, in this example) and a height of 200 pixels. Setting overflow to hidden ensures that any
+          content with dimensions larger than the container will be hidden from view.
+
+          The second CSS rule ensures that images scale with the width of the container. The height property is set to
+          auto, meaning an image’s height will automatically scale proportionally with the width. Finally, the last line
+          will display images as block level elements (rather than inline-block, their default state). This will prevent
+          images from attempting to align with other content on the page (like text), which can add unintended margin to
+          the images.
+
+          It’s worth memorizing the entire example above. It represents a very common design pattern used to scale
+          images and videos proportionally.</p>
+      </div>
     </section>
 
 
